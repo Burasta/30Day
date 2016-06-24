@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class day2 {
+public class day02 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

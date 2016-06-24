@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class day0 {
+public class day00 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in); // use the Scanner class to read from stdin
         System.out.println("What's your input string?");
