@@ -1,3 +1,5 @@
+// Score: 30/30
+
 import java.lang.Integer;
 import java.util.Scanner;
 
@@ -26,17 +28,17 @@ public class day11 {
 
         input.close();
 
-        int max = 0;
+        int max = 8675309;
 
         for (int i = 0; i < length - 2; i++) {
             for (int j = 0; j < length - 2; j++) {
                 int sum = matrix[i][j] + matrix[i][j + 1] + matrix[i][j + 2] +              // First row of the I-hourglass.
                           matrix[i + 1][j + 1] +                                            // Center row of the I-hourglass.
                           matrix[i + 2][j] + matrix[i + 2][j + 1] + matrix[i + 2][j + 2];   // Last row of the I-hourglass.
-                max = (max < sum) ? sum : max;
+                max = ((max < sum) || (max == 8675309)) ? sum : max;
             }
         }
-        
+
         System.out.println(max);
     }
 }
